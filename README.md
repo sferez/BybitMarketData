@@ -33,26 +33,26 @@ The data is collected through the public Bybit WebSocket connected to the Future
 
 The ticker data is collected from the **tickers.{symbol}** channel, which provides the following information:
 
-- 'symbol': the trading pair
-- 'tickDirection': the direction of the last tick
-- 'price24hPcnt': the percentage change in price over the last 24 hours
-- 'lastPrice': the last traded price
-- 'prevPrice24h': the price 24 hours ago
-- 'highPrice24h': the highest price over the last 24 hours
-- 'lowPrice24h': the lowest price over the last 24 hours
-- 'prevPrice1h': the price 1 hour ago
-- 'markPrice': the mark price
-- 'indexPrice': the index price
-- 'openInterest': the open interest
-- 'openInterestValue': the open interest value
-- 'turnover24h': the turnover over the last 24 hours
-- 'volume24h': the volume over the last 24 hours
-- 'nextFundingTime': the next funding time
-- 'fundingRate': the funding rate
-- 'bid1Price': the best bid price
-- 'bid1Size': the best bid size
-- 'ask1Price': the best ask price
-- 'ask1Size': the best ask size
+- `symbol`: the trading pair
+- `tickDirection`: the direction of the last tick
+- `price24hPcnt`: the percentage change in price over the last 24 hours
+- `lastPrice`: the last traded price
+- `prevPrice24h`: the price 24 hours ago
+- `highPrice24h`: the highest price over the last 24 hours
+- `lowPrice24h`: the lowest price over the last 24 hours
+- `prevPrice1h`: the price 1 hour ago
+- `markPrice`: the mark price
+- `indexPrice`: the index price
+- `openInterest`: the open interest
+- `openInterestValue`: the open interest value
+- `turnover24h`: the turnover over the last 24 hours
+- `volume24h`: the volume over the last 24 hours
+- `nextFundingTime`: the next funding time
+- `fundingRate`: the funding rate
+- `bid1Price`: the best bid price
+- `bid1Size`: the best bid size
+- `ask1Price`: the best ask price
+- `ask1Size`: the best ask size
 
 #### Example
 
@@ -91,8 +91,8 @@ The following JSON data is dumped in the JSONL file every second with the update
 The order book data is collected from the **orderbook.{depth}.{symbol}** channel, using a depth of 200. The data
 provides the following information:
 
-- 'b': the bid side of the order book
-- 'a': the ask side of the order book
+- `b`: the bid side of the order book
+- `a`: the ask side of the order book
 
 #### Example
 
@@ -107,14 +107,14 @@ The following JSON data is dumped in the JSONL file every second with the update
       "49396.80": "0.020",
       "49392.60": "0.001",
       "49392.50": "0.342"
-      //      ... {200 entries}
+      " ... {200 entries}": ""
     },
     "a": {
       "49400.10": "0.001",
       "49400.20": "0.001",
       "49400.30": "0.001",
-      "49400.40": "0.001"
-      //... {200 entries}
+      "49400.40": "0.001",
+      " ... {200 entries}": ""
     }
   }
 }
@@ -124,14 +124,14 @@ The following JSON data is dumped in the JSONL file every second with the update
 
 The trade data is collected from the **trade.{symbol}** channel, which provides the following information:
 
-- 'T': the timestamp of the trade
-- 's': the trading pair
-- 'S': the side of the trade (Buy or Sell)
-- 'v': the quantity of the trade
-- 'p': the price of the trade
-- 'L': the tick direction of the trade
-- 'i': the trade ID
-- 'BT': whether the trade is a block trade
+- `T`: the timestamp of the trade
+- `s`: the trading pair
+- `S`: the side of the trade (Buy or Sell)
+- `v`: the quantity of the trade
+- `p`: the price of the trade
+- `L`: the tick direction of the trade
+- `i`: the trade ID
+- `BT`: whether the trade is a block trade
 
 #### Example
 
@@ -150,8 +150,10 @@ The following JSON data is dumped in the JSONL file every second with the update
       "L": "ZeroMinusTick",
       "i": "2c994d6a-0804-52dd-94db-091619469f02",
       "BT": false
+    },
+    {
+      " ... all trades in the last second": ""
     }
-    //    ... {all trades in the last second}
   ]
 }
 ```
@@ -160,11 +162,11 @@ The following JSON data is dumped in the JSONL file every second with the update
 
 The liquidation data is collected from the **liquidation.{symbol}** channel, which provides the following information:
 
-- 'updateTime': the timestamp of the liquidation
-- 'symbol': the trading pair
-- 'side': the side of the liquidation (Buy or Sell). Buy liquidations are long positions being liquidated.
-- 'size': the quantity of the liquidation
-- 'price': the price of the liquidation
+- `updateTime`: the timestamp of the liquidation
+- `symbol`: the trading pair
+- `side`: the side of the liquidation (Buy or Sell). Buy liquidations are long positions being liquidated.
+- `size`: the quantity of the liquidation
+- `price`: the price of the liquidation
 
 #### Example
 
@@ -180,8 +182,10 @@ The following JSON data is dumped in the JSONL file every second with the update
       "side": "Buy",
       "size": "0.003",
       "price": "49407.90"
+    },
+    {
+      " ... all liquidations in the last second": ""
     }
-    //    ... {all liquidations in the last second}
   ]
 }
 ```
@@ -220,7 +224,3 @@ publicly available, and usage should comply with Bybit's terms of service and an
 
 Contributions to improve the data collection process or enhance the repository's functionality are welcome. Please open
 an issue or pull request to discuss any proposed changes.
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
