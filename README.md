@@ -17,14 +17,16 @@ facilitating further analysis or model creation using AI techniques.
 - [Contributing](#contributing)
 - [License](#license)
 
-The data collected includes various types of market events such as trades, liquidations, ticker information, and order
-book updates. All the data is sourced from the public Bybit WebSocket.
+The data collected includes various types of market events such as `trades`, `liquidations`, `ticker informations`, and `order
+book updates`. All the data is sourced from the public Bybit WebSocket.
 
-Currently, the data is available for BTC, ETH, and SOL on the Future market. Data is logged every second, ensuring a
+Currently, the data is available for `BTC`, `ETH`, and `SOL` on the Future market. Data is logged every second, ensuring a
 high level of granularity. The data is stored in JSONL format. Data is uploaded every few days to ensure the data is up
 to date.
 
 ## Data Collection
+
+Start date: 12th February 2024: 1707755825000
 
 The data is collected through the public Bybit WebSocket connected to the Future market (wss:
 //stream.bybit.com/v5/public/linear)
@@ -209,6 +211,10 @@ Each JSONL entry follows a structure where:
 
 - `t`: represents the timestamp of the event
 - `d`: contains the event data
+
+## Known Issues
+
+- 2024-02-12: 1707772970001 - 1707773030020 (61 ticks): Data is potentially incomplete due to a network issue.
 
 ## Usage
 
