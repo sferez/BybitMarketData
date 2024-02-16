@@ -17,10 +17,12 @@ facilitating further analysis or model creation using AI techniques.
 - [Contributing](#contributing)
 - [License](#license)
 
-The data collected includes various types of market events such as `trades`, `liquidations`, `ticker informations`, and `order
+The data collected includes various types of market events such as `trades`, `liquidations`, `ticker informations`,
+and `order
 book updates`. All the data is sourced from the public Bybit WebSocket.
 
-Currently, the data is available for `BTC`, `ETH`, and `SOL` on the Future market. Data is logged every second, ensuring a
+Currently, the data is available for `BTC`, `ETH`, and `SOL` on the Future market. Data is logged every second, ensuring
+a
 high level of granularity. The data is stored in JSONL format. Data is uploaded every few days to ensure the data is up
 to date.
 
@@ -172,7 +174,8 @@ The liquidation data is collected from the **liquidation.{symbol}** channel, whi
 
 #### Example
 
-The following JSON data is dumped in the JSONL file every second with the updated liquidation information of the last second:
+The following JSON data is dumped in the JSONL file every second with the updated liquidation information of the last
+second:
 
 ```json
 {
@@ -202,8 +205,7 @@ logged every second, ensuring a high level of granularity.
 - **/data**
     - **/COIN**
         - **/DAY**
-            - **/type** (e.g. trades, liquidations, orderbook, ticker)
-                - *jsonl files* (potentially split into several parts of 100MB each)
+            - *zipped jsonl files*
 
 ## JSONL Structure
 
