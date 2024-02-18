@@ -216,7 +216,9 @@ Each JSONL entry follows a structure where:
 
 ## Known Issues
 
-- 2024-02-12: 1707772970001 - 1707773030020 (61 ticks): Data is potentially incomplete due to a network issue.
+| Date       | Timestamp                       | Nbr Ticks | Details                                                |
+|------------|---------------------------------|-----------|--------------------------------------------------------|
+| 2024-02-12 | 1707772970001<br/>1707773030020 | 61        | Data is potentially incomplete due to a network issue. |
 
 ## Usage
 
