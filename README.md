@@ -220,6 +220,7 @@ Each JSONL entry follows a structure where:
 |------------|---------------------------------|-----------|--------------------------------------------------------|
 | 2024-02-12 | 1707772970001<br/>1707773030020 | 61        | Data is potentially incomplete due to a network issue. |
 | 2024-02-22 | All day                         | All day   | Lost data                                              |
+| 2024-02-25 | 1708827432002<br/>1708828412000 | 981       | Data is potentially incomplete due to a network issue. |
 
 ## Usage
 
