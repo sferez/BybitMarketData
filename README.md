@@ -216,18 +216,34 @@ Each JSONL entry follows a structure where:
 
 ## Known Issues
 
-| Date       | Timestamp                       | Nbr Ticks | Details                                               |
-|------------|---------------------------------|-----------|-------------------------------------------------------|
-| 2024-02-12 | 1707772970001<br/>1707773030020 | 61        | Data is potentially incomplete due to a network issue |
-| 2024-02-22 | All day                         | All day   | Lost data                                             |
-| 2024-02-25 | 1708827432002<br/>1708828412000 | 981       | Data is potentially incomplete due to a network issue |
-| 2024-02-28 | 1709099834000<br/>1709100721001 | 888       | Data is potentially incomplete due to a network issue |
-| 2024-03-04 | 1709512392001<br/>1709512967001 | 576       | Data is potentially incomplete due to a network issue |
-| 2024-03-06 | 1709692315001<br/>1709693284000 | 970       | Data is potentially incomplete due to a network issue |
-| 2024-03-21 | 1710983701000<br>1710984640000  | 940       | Data is potentially incomplete due to a network issue |
-| 2024-03-21 | 1711034885002<br>1711035136001  | 252       | Data is potentially incomplete due to a network issue |
-| 2024-03-24 | 1711247020000<br>1711248009000  | 990       | Data is potentially incomplete due to a network issue |
-| 2024-03-24 | 1711238975001<br>1711239321002  | 347       | Data is potentially incomplete due to a network issue |
+| Date                    | Timestamp                       | Nbr Ticks | Details                                               |
+|-------------------------|---------------------------------|-----------|-------------------------------------------------------|
+| 2024-02-12              | 1707772970001<br/>1707773030020 | 61        | Data is potentially incomplete due to a network issue |
+| 2024-02-22              | All day                         | All day   | Lost data                                             |
+| 2024-02-25              | 1708827432002<br/>1708828412000 | 981       | Data is potentially incomplete due to a network issue |
+| 2024-02-28              | 1709099834000<br/>1709100721001 | 888       | Data is potentially incomplete due to a network issue |
+| 2024-03-04              | 1709512392001<br/>1709512967001 | 576       | Data is potentially incomplete due to a network issue |
+| 2024-03-06              | 1709692315001<br/>1709693284000 | 970       | Data is potentially incomplete due to a network issue |
+| 2024-03-21              | 1710983701000<br>1710984640000  | 940       | Data is potentially incomplete due to a network issue |
+| 2024-03-21              | 1711034885002<br>1711035136001  | 252       | Data is potentially incomplete due to a network issue |
+| 2024-03-24              | 1711247020000<br>1711248009000  | 990       | Data is potentially incomplete due to a network issue |
+| 2024-03-24              | 1711238975001<br>1711239321002  | 347       | Data is potentially incomplete due to a network issue |
+| 2024-03-26              | 1711414123000<br>1711414239001  | 117       | Data is potentially incomplete due to a network issue |
+| 2024-03-26              | 1711464233001<br>1711464275000  | 43        | Data is potentially incomplete due to a network issue |
+| 2024-03-27              | 1711500402000<br>1711500521001  | 120       | Data is potentially incomplete due to a network issue |
+| 2024-03-29              | 1711679154000<br>1711680133001  | 980       | Data is potentially incomplete due to a network issue |
+| 2024-03-29              | 1711671054001<br>1711671400001  | 347       | Data is potentially incomplete due to a network issue |
+| 2024-03-31 - 2024-05-06 | All days                        | All days  | Lost data                                             |
+| 2024-05-06              | 1715037365002<br>1715038229000  | 865       | Data is potentially incomplete due to a network issue |
+| 2024-05-08              | 1715181908001<br>1715184785001  | 34        | Data is potentially incomplete due to a network issue |
+| 2024-05-09              | 1715261548004<br>1715268563000  | 40        | Data is potentially incomplete due to a network issue |
+| 2024-05-10              | 1715343521002<br>1715376321000  | 48        | Data is potentially incomplete due to a network issue |
+| 2024-05-13              | 1715642017001<br>1715642363001  | 347       | Data is potentially incomplete due to a network issue |
+| 2024-05-15              | 1715751502001<br>1715752472000  | 971       | Data is potentially incomplete due to a network issue |
+| 2024-05-15              | 1715784042001<br>1715784099001  | 58        | Data is potentially incomplete due to a network issue |
+| 2024-05-15              | 1715791437001<br>1715791486001  | 50        | Data is potentially incomplete due to a network issue |
+| 2024-05-19              | 1716097200000<br>1716098182999  | 984       | Data is potentially incomplete due to a network issue |
+| 2024-05-21              | 1716280086000<br>1716280142001  | 57        | Data is potentially incomplete due to a network issue |
 
 ## Usage
 
