@@ -1,5 +1,8 @@
 # Bybit Market Data Collector
 
+> ⚠️ **Note**: Due to the growing size of this dataset and storage limitations within the repository, the data here may not reflect the most recent updates. For access to the latest and complete dataset, please contact me directly.
+> ⚠️
+
 This repository serves as a collection point for market data from the Bybit cryptocurrency exchange, aimed at
 facilitating further analysis or model creation using AI techniques.
 
